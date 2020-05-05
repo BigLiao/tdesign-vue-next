@@ -5,7 +5,7 @@
       v-for="icon in icons"
       :key="icon"
     >
-      <tdesign-icon :icon="icon" />
+      <t-icon :icon="icon" />
       <p :title="icon">
         {{ icon }}
       </p>
