@@ -1,9 +1,9 @@
 import Vue, { CreateElement, VNode } from 'vue';
-import { prefix } from '../../config';
-import CLASSNAMES from '../../utils/classnames';
-import '../icon.less';
+import { prefix } from '../config';
+import CLASSNAMES from '../utils/classnames';
+import '../../common/style/web/components/icon/_index.less';
 
-const name = prefix + '-icon-' + 'home-sheep';
+const name = prefix + '-icon-' + 'close';
 
 export default Vue.extend({
   name,
@@ -19,7 +19,8 @@ export default Vue.extend({
   computed: {
     classes(): Array<string|object> {
       return [
-        't-icon',
+        `${prefix}-icon`,
+        name,
         CLASSNAMES.SIZE[this.size],
       ]
     },
@@ -32,7 +33,7 @@ export default Vue.extend({
   },
  
   render(h: CreateElement) {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M33.3 9.2c-.8-.7-1.9-.7-2.7 0l-26 23.3c-.8.8-.7 2.1.1 2.8.3.4.8.6 1.3.6h7V56h15.4V43.2h7.3V56H51V35.9h7c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.4L33.3 9.2zm-22 22.7L32 13.4l20.7 18.5H47V52h-7.4V39.2H24.4V52H17V31.9h-5.7z"/></svg>
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 8L13 12 12 13 8 9 4 13 3 12 7 8 3 4 4 3 8 7 12 3 13 4z"/></svg>
   }
  
 });

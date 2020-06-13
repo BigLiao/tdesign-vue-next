@@ -1,7 +1,7 @@
 import Vue, { CreateElement, VNode } from 'vue';
-import { prefix } from '../../config';
-import CLASSNAMES from '../../utils/classnames';
-import '../icon.less';
+import { prefix } from '../config';
+import CLASSNAMES from '../utils/classnames';
+import '../../common/style/web/components/icon/_index.less';
 
 const name = prefix + '-icon-' + 'discount';
 
@@ -19,7 +19,8 @@ export default Vue.extend({
   computed: {
     classes(): Array<string|object> {
       return [
-        't-icon',
+        `${prefix}-icon`,
+        name,
         CLASSNAMES.SIZE[this.size],
       ]
     },
