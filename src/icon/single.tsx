@@ -11,8 +11,7 @@ export default Vue.extend({
   props: {
     // xs/small/middle/large/xl/18px
     size: {
-      type: String,
-      default: 'middle'
+      type: String
     }
   },
 
