@@ -1,18 +1,18 @@
-import Vue, { CreateElement, VNode } from 'vue';
+import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import '../../common/style/web/components/icon/_index.less';
 
-const name = prefix + '-icon-' + '/** SVG NAME */>';
+const name = `${prefix}-icon-/** SVG NAME */>`;
 
 export default Vue.extend({
   name,
- 
+
   props: {
     // xs/small/middle/large/xl/18px
     size: {
-      type: String
-    }
+      type: String,
+    },
   },
 
   computed: {
@@ -21,18 +21,18 @@ export default Vue.extend({
         `${prefix}-icon`,
         name,
         CLASSNAMES.SIZE[this.size],
-      ]
+      ];
     },
-    iconStyle(): Object {
-      if (['xs', 'small', 'middle', 'large', 'xl'].includes(this.size)) return {}
+    iconStyle(): object {
+      if (['xs', 'small', 'middle', 'large', 'xl'].includes(this.size)) return {};
       return {
-        'font-size': this.size
-      }
-    }
+        'font-size': this.size,
+      };
+    },
   },
- 
-  render(h: CreateElement) {
-    return <svg>/** SVG CODE */</svg>
-  }
- 
+
+  render() {
+    return <svg>/** SVG CODE */</svg>;
+  },
+
 });
