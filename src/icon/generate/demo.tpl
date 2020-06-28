@@ -12,7 +12,7 @@
 <style lang="less">
   .t-demo-iconfont {
     .t-demo-icon {
-      width: 100px;
+      width: 130px;
       margin-right: 24px;
       display: inline-block;
       text-align: center;
