@@ -5,16 +5,8 @@
       class="demo-select-base"
       @change="handleChange"
       @visible-change="visibleChange"
+      :options="options"
     >
-      <t-option
-        v-for="(item, index) in options"
-        :value="item.value"
-        :label="item.label"
-        :disabled="item.disabled"
-        :key="index"
-      >
-        {{ item.label }}
-      </t-option>
     </t-select>
   </div>
 </template>
