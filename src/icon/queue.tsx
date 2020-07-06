@@ -3,13 +3,13 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import '../../common/style/web/components/icon/_index.less';
 
-const name = `${prefix}-icon-success-fill`;
+const name = `${prefix}-icon-queue`;
 
 export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px
+    // xs/small/middle/large/xl/18px/2em
     size: {
       type: String,
     },
@@ -32,7 +32,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 Z M10.925,4.8 L7.036,8.689 L4.914,6.568 L3.5,7.982 L7.036,11.518 L12.339,6.214 L10.925,4.8 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11,4 C11.5522847,4 12,4.44771525 12,5 L12,13 C12,13.5522847 11.5522847,14 11,14 L3,14 C2.44771525,14 2,13.5522847 2,13 L2,5 C2,4.44771525 2.44771525,4 3,4 L11,4 Z M11,5 L3,5 L3,13 L11,13 L11,5 Z M14,13 L13,13 L13,3 L3,3 L3,2 L13,2 C13.5522847,2 14,2.44771525 14,3 L14,13 Z M9,9 L9,10 L5,10 L5,9 L9,9 Z"/></svg>;
   },
 
 });

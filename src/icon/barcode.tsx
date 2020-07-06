@@ -3,13 +3,13 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import '../../common/style/web/components/icon/_index.less';
 
-const name = `${prefix}-icon-success-2`;
+const name = `${prefix}-icon-barcode`;
 
 export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px
+    // xs/small/middle/large/xl/18px/2em
     size: {
       type: String,
     },
@@ -32,7 +32,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#000" fill-rule="nonzero" d="M6.00012809 9.33333333L3.31495134 6.66530687 1.33333333 8.66666667 5.77777778 13.3333333 14.6666667 4.66666667 12.7619048 2.66666667z"/><path d="M0 0H16V16H0z"/></g></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4,2 L4,14 L2,14 L2,2 L4,2 Z M14,2 L14,14 L12,14 L12,2 L14,2 Z M11,2 L11,14 L10,14 L10,2 L11,2 Z M9,2 L9,14 L7,14 L7,2 L9,2 Z M6,2 L6,14 L5,14 L5,2 L6,2 Z"/></svg>;
   },
 
 });

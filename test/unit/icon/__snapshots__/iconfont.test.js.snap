@@ -11,6 +11,6 @@ exports[`Iconfont :props :tag 1`] = `
 </div>
 `;
 
-exports[`Iconfont :props :url array 1`] = `<div><i class="t-icon t-icon-home"></i></div>`;
+exports[`Iconfont :props :url array 1`] = `<div><i class="t-icon home"></i></div>`;
 
-exports[`Iconfont :props :url string 1`] = `<div><i class="t-icon t-icon-home"></i></div>`;
+exports[`Iconfont :props :url string 1`] = `<div><i class="t-icon home"></i></div>`;
