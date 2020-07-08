@@ -3,13 +3,13 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import '../../common/style/web/components/icon/_index.less';
 
-const name = `${prefix}-icon-warning-fill`;
+const name = `${prefix}-icon-slash`;
 
 export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px
+    // xs/small/middle/large/xl/18px/2em
     size: {
       type: String,
     },
@@ -32,7 +32,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7,12 L9,12 L9,10 L7,10 L7,12 Z M7,9 L9,9 L9,4 L7,4 L7,9 Z M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 L8,0 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11 3L11.8660254 3.5 5.8660254 13.8923048 5 13.3923048z"/></svg>;
   },
 
 });

@@ -3,13 +3,13 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import '../../common/style/web/components/icon/_index.less';
 
-const name = `${prefix}-icon-prompt-fill`;
+const name = `${prefix}-icon-order-verticle-bottomup`;
 
 export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px
+    // xs/small/middle/large/xl/18px/2em
     size: {
       type: String,
     },
@@ -32,7 +32,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7,6 L9,6 L9,4 L7,4 L7,6 Z M7,12 L9,12 L9,7 L7,7 L7,12 Z M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 L8,0 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7,11 L7,12 L1,12 L1,11 L7,11 Z M11,7 L11,8 L1,8 L1,7 L11,7 Z M15,3 L15,4 L1,4 L1,3 L15,3 Z" transform="matrix(-1 0 0 1 16 0)"/></svg>;
   },
 
 });
