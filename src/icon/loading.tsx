@@ -9,7 +9,7 @@ export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px
+    // xs/small/middle/large/xl/18px/2em
     size: {
       type: String,
     },
@@ -32,7 +32,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0,8 C0,3.582 3.582,0 8,0 C12.418,0 16,3.582 16,8 L14,8 L14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 L8,16 C3.582,16 0,12.418 0,8 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.5,8 C1.5,4.410375 4.410375,1.5 8,1.5 C11.589625,1.5 14.5,4.410375 14.5,8 L12.875,8 L12.875,8 C12.875,5.30761184 10.6923882,3.125 8,3.125 C5.30761184,3.125 3.125,5.30761184 3.125,8 C3.125,10.6923882 5.30761184,12.875 8,12.875 L8,14.5 C4.410375,14.5 1.5,11.589625 1.5,8 Z"/></svg>;
   },
 
 });
