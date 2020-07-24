@@ -9,7 +9,7 @@ export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px/2em
+    // xs/small/middle/large/xl/18px
     size: {
       type: String,
     },

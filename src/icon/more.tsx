@@ -9,7 +9,7 @@ export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px/2em
+    // xs/small/middle/large/xl/18px
     size: {
       type: String,
     },
@@ -32,7 +32,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3,7 C3.55228475,7 4,7.44771525 4,8 C4,8.55228475 3.55228475,9 3,9 C2.44771525,9 2,8.55228475 2,8 C2,7.44771525 2.44771525,7 3,7 Z M8,7 C8.55228475,7 9,7.44771525 9,8 C9,8.55228475 8.55228475,9 8,9 C7.44771525,9 7,8.55228475 7,8 C7,7.44771525 7.44771525,7 8,7 Z M13,7 C13.5522847,7 14,7.44771525 14,8 C14,8.55228475 13.5522847,9 13,9 C12.4477153,9 12,8.55228475 12,8 C12,7.44771525 12.4477153,7 13,7 Z" transform="rotate(90 8 8)"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M8,4 C9.1,4 10,3.1 10,2 C10,0.9 9.1,0 8,0 C6.9,0 6,0.9 6,2 C6,3.1 6.9,4 8,4 Z M8,6 C6.9,6 6,6.9 6,8 C6,9.1 6.9,10 8,10 C9.1,10 10,9.1 10,8 C10,6.9 9.1,6 8,6 Z M8,12 C6.9,12 6,12.9 6,14 C6,15.1 6.9,16 8,16 C9.1,16 10,15.1 10,14 C10,12.9 9.1,12 8,12 Z"/></svg>;
   },
 
 });

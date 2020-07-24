@@ -3,7 +3,7 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import '../../common/style/web/components/icon/_index.less';
 
-const name = `${prefix}-icon-arrow-left`;
+const name = `${prefix}-icon-success-fill`;
 
 export default Vue.extend({
   name,
@@ -32,7 +32,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M4.78170052 3.08475456L5.4888073 2.37764778 11.1111595 8 5.4888073 13.6223522 4.78170052 12.9152454 9.697 8z" transform="matrix(-1 0 0 1 16 0)"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 Z M10.925,4.8 L7.036,8.689 L4.914,6.568 L3.5,7.982 L7.036,11.518 L12.339,6.214 L10.925,4.8 Z"/></svg>;
   },
 
 });
