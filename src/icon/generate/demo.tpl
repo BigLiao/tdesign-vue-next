@@ -1,6 +1,6 @@
 <template>
   <!--
-    该文件有脚本 tdesign/tdesign-web-vue/src/icon/generate/index.js 自动生成。
+    该文件由脚本 tdesign/tdesign-web-vue/src/icon/generate/index.js 自动生成。
     若需要编辑，请编辑源文件：tdesign/tdesign-web-vue/src/icon/generate/demo.tpl 。
   -->
   <div class="t-demo-iconfont">
