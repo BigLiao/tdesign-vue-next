@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
 import TIconLoading from '@/src/icon/loading.tsx';
 import TIconClose from '@/src/icon/close.tsx';
-import TIconSuccessFill from '@/src/icon/success-fill.tsx';
+import TIconSuccessFill from '@/src/icon/success_fill.tsx';
 
 // every component needs four parts: props/events/slots/functions.
 describe('Iconfont', () => {

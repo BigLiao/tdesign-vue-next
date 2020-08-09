@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
-import '../../common/style/web/components/icon/_index.less';
 
 const name = `${prefix}-icon-arrow-down`;
 
@@ -9,7 +8,7 @@ export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px
+    // xs/small/middle/large/xl/18px/2em
     size: {
       type: String,
     },

@@ -25,13 +25,13 @@ exports[`Iconfont :props :size 1`] = `
 `;
 
 exports[`Iconfont :props :url array 1`] = `
-<div><svg class="t-icon t-icon-home">
-    <use xlink:href="#t-icon-home"></use>
+<div><svg class="t-icon home">
+    <use xlink:href="#home"></use>
   </svg></div>
 `;
 
 exports[`Iconfont :props :url string 1`] = `
-<div><svg class="t-icon t-icon-home">
-    <use xlink:href="#t-icon-home"></use>
+<div><svg class="t-icon home">
+    <use xlink:href="#home"></use>
   </svg></div>
 `;
