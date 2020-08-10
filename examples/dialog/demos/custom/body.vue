@@ -2,7 +2,6 @@
   <div>
     <t-button theme="primary" @click="()=>this.visible1 = true">隐藏标题</t-button>
     <t-button theme="primary" @click="()=>this.visible2 = true">隐藏底部</t-button>
-    <t-button theme="primary" @click="()=>this.visibleBottom = true">自定义底部按钮</t-button>
     <t-button theme="primary" @click="()=>this.visible3 = true">渲染函数定义内容</t-button>
     <t-button theme="primary" @click="()=>this.visible4 = true">插槽方式定义内容</t-button>
 
@@ -30,23 +29,6 @@
         <div>我是内容</div>
         <div>我是内容</div>
       </div>
-    </t-dialog>
-
-    <!-- confirmContent 类型多种，string, function, object, boolean -->
-    <t-dialog
-      v-model="visibleBottom"
-      @click-close-btn="(close)=>close()"
-      header="提示"
-      body="自定义底部按钮"
-      :confirmContent="{
-        content: '前往购物车',
-        theme: 'warning',
-      }"
-      :cancelContent="{
-        content: '我知道了',
-        theme: 'primary',
-      }"
-    >
     </t-dialog>
 
     <t-dialog
@@ -79,7 +61,6 @@ export default Vue.extend({
       visible2: false,
       visible3: false,
       visible4: false,
-      visibleBottom: false,
     };
   },
   methods: {
