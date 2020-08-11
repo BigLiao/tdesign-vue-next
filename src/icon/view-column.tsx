@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
-import '../../common/style/web/components/icon/_index.less';
 
 const name = `${prefix}-icon-view-column`;
 
