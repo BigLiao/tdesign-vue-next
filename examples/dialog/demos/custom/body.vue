@@ -6,7 +6,6 @@
     <t-button theme="primary" @click="()=>this.visible4 = true">插槽方式定义内容</t-button>
 
     <t-dialog :header="false" body="对话框内容" v-model="visible1" @click-close-btn="(close)=>close()">
-      <h2 slot="header">被隐藏标题</h2>
       <div slot="body">
         <div>不需要标题的内容</div>
         <div>我是内容</div>
@@ -15,6 +14,7 @@
         <div>我是内容</div>
       </div>
     </t-dialog>
+
     <t-dialog
       v-model="visible2"
       @click-close-btn="(close)=>close()"
@@ -30,6 +30,7 @@
         <div>我是内容</div>
       </div>
     </t-dialog>
+
     <t-dialog
       v-model="visible3"
       @click-close-btn="(close)=>close()"
@@ -38,6 +39,7 @@
     >
       <div slot="body">被渲染函数覆盖的插槽内容</div>
     </t-dialog>
+
     <t-dialog header="对话框标题" v-model="visible4" @click-close-btn="(close)=>close()">
       <div slot="body">
         <div>我是内容</div>
