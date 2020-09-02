@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-loading-2`;
+const name = `${prefix}-icon-hourglass`;
 
 export default Vue.extend({
   name,

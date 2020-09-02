@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-file-open`;
+const name = `${prefix}-icon-folder-open`;
 
 export default Vue.extend({
   name,
