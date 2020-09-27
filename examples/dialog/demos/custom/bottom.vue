@@ -7,7 +7,6 @@
 
     <t-dialog
       v-model="visible1"
-      @close="(close)=>close()"
       header="提示"
       body="自定义底部按钮，直接传入文字"
       confirmContent="前往支付"
@@ -17,7 +16,6 @@
 
     <t-dialog
       v-model="visible2"
-      @close="(close)=>close()"
       header="提示"
       body="自定义底部按钮，传入 ButttonProps"
       :confirmContent="{
@@ -33,7 +31,6 @@
 
     <t-dialog
       v-model="visible3"
-      @close="(close)=>close()"
       header="提示"
       body="自定义底部按钮，传入自定义组件"
       :confirmContent="getConfirmBtn"
