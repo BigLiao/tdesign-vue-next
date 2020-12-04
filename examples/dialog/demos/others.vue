@@ -8,13 +8,11 @@
       header="对话框标题"
       body="对话框内容"
       v-model="visibleNotModal"
-      @click-close-btn="(close)=>close()"
       mode="not-modal"
       draggable
     ></t-dialog>
     <t-dialog
       v-model="visibleBody"
-      @click-close-btn="(close)=>close()"
       attach="body"
       header="全局对话框"
     >
@@ -28,7 +26,6 @@
     </t-dialog>
     <t-dialog
       v-model="visibleIdAttach"
-      @click-close-btn="(close)=>close()"
       attach="#app"
       header="挂载到id为app的元素"
     >
@@ -42,7 +39,6 @@
     </t-dialog>
     <t-dialog
       v-model="visibleFunctionAttach"
-      @click-close-btn="(close)=>close()"
       :attach="getAttach"
       header="函数返回挂载节点"
     >
