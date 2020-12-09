@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-order-verticle-normal`;
+const name = `${prefix}-icon-format-vertical-align-center`;
 
 export default Vue.extend({
   name,
@@ -31,7 +31,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11,11.5 L11,12.5 L5,12.5 L5,11.5 L11,11.5 Z M13,7.5 L13,8.5 L3,8.5 L3,7.5 L13,7.5 Z M15,3.5 L15,4.5 L1,4.5 L1,3.5 L15,3.5 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M768 768L768 832 256 832 256 768 768 768ZM896 576L896 640 128 640 128 576 896 576ZM768 384L768 448 256 448 256 384 768 384ZM896 192L896 256 128 256 128 192 896 192Z"/></svg>;
   },
 
 });
