@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-circle-time_full`;
+const name = `${prefix}-icon-format-vertical-align-left`;
 
 export default Vue.extend({
   name,
@@ -31,7 +31,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8,1.5 C11.5898509,1.5 14.5,4.41014913 14.5,8 C14.5,11.5898509 11.5898509,14.5 8,14.5 C4.41014913,14.5 1.5,11.5898509 1.5,8 C1.5,4.41014913 4.41014913,1.5 8,1.5 Z M8.5,4 L7.5,4 L7.5,8.5 L7.501,8.5 L10.5641778,11.0711504 L11.2069654,10.305106 L8.5,8.034 L8.5,4 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M640 768L640 832 128 832 128 768 640 768ZM896 576L896 640 128 640 128 576 896 576ZM640 384L640 448 128 448 128 384 640 384ZM896 192L896 256 128 256 128 192 896 192Z"/></svg>;
   },
 
 });

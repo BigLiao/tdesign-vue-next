@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-order-horizontal-normal`;
+const name = `${prefix}-icon-time-filled`;
 
 export default Vue.extend({
   name,
@@ -31,7 +31,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.5,11.5 L6.5,12.5 L0.5,12.5 L0.5,11.5 L6.5,11.5 Z M10.5,7.5 L10.5,8.5 L0.5,8.5 L0.5,7.5 L10.5,7.5 Z M14.5,3.5 L14.5,4.5 L0.5,4.5 L0.5,3.5 L14.5,3.5 Z" transform="rotate(-90 7.5 8)"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M512 96C741.7504576 96 928 282.24954432 928 512 928 741.7504576 741.7504576 928 512 928 282.24954432 928 96 741.7504576 96 512 96 282.24954432 282.24954432 96 512 96ZM544 256L480 256 480 544 480.064 544 676.1073792 708.5536256 717.2457856 659.526784 544 514.176 544 256Z"/></svg>;
   },
 
 });
