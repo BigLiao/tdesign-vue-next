@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-order-verticle-updown`;
+const name = `${prefix}-icon-info-circle-filled`;
 
 export default Vue.extend({
   name,
@@ -31,7 +31,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7,11 L7,12 L1,12 L1,11 L7,11 Z M11,7 L11,8 L1,8 L1,7 L11,7 Z M15,3 L15,4 L1,4 L1,3 L15,3 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M512 96C741.7504576 96 928 282.24954432 928 512 928 741.7504576 741.7504576 928 512 928 282.24954432 928 96 741.7504576 96 512 96 282.24954432 282.24954432 96 512 96ZM544 416L416 416 416 480 480 480 480 736 608 736 608 672 544 672 544 416ZM544 288L480 288 480 352 544 352 544 288Z"/></svg>;
   },
 
 });

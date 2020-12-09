@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-circle-add`;
+const name = `${prefix}-icon-add-circle`;
 
 export default Vue.extend({
   name,
