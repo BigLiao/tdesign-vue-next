@@ -31,8 +31,8 @@ export default {
 
     getIcon(status) {
       return {
-        success: { name: 'success_fill', fill: 'green' },
-        fail: { name: 'warning_fill', fill: '#ff3e00' },
+        success: { name: 'check-circle-filled', fill: 'green' },
+        fail: { name: 'error-circle-filled', fill: '#ff3e00' },
         progress: { name: 'loading', fill: '#0052d9' },
       }[status];
     },
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <section class="tdesign-demo-upload-multiple" style="width: 570px;">
+  <section class="tdesign-demo-upload-multiple" style="width: 570px">
     <header class="tdesign-demo-upload-multiple-header">
       <t-upload
         action="//www.mocky.io/v2/5cc8019d300000980a055e76"
@@ -50,7 +50,8 @@ export default {
         :multiple="true"
         :before-upload="beforeUpload"
         @change="handleChange"
-        accept="image/*">
+        accept="image/*"
+      >
         <t-button theme="line" slot="trigger" icon="upload">选择文件</t-button>
       </t-upload>
     </header>
@@ -64,14 +65,14 @@ export default {
       </div>
       <div class="tdesign-demo-upload-table-item" v-for="item in fileList" :key="item.uid">
         <div class="tdesign-demo-upload-table__name">
-          <span>{{item.name}}</span>
+          <span>{{ item.name }}</span>
         </div>
         <div class="tdesign-demo-upload-table__size">
-          <span>{{getFileSize(item.size)}}</span>
+          <span>{{ getFileSize(item.size) }}</span>
         </div>
         <div class="tdesign-demo-upload-table__status tdesign-demo-upload-table__status--success">
           <t-icon :name="getIcon(item.status).name" :style="'color:' + getIcon(item.status).fill"></t-icon>
-          <span>{{getStatusText(item.status)}}</span>
+          <span>{{ getStatusText(item.status) }}</span>
         </div>
         <div class="tdesign-demo-upload-table__operator">
           <t-button theme="link" size="small" @click="handleDelete(item)">删除</t-button>
