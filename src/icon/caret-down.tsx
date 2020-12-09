@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-carret-down`;
+const name = `${prefix}-icon-caret-down`;
 
 export default Vue.extend({
   name,
