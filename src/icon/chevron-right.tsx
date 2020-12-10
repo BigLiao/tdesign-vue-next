@@ -2,7 +2,7 @@ import Vue from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
-const name = `${prefix}-icon-order-horizontal-bottomup`;
+const name = `${prefix}-icon-chevron-right`;
 
 export default Vue.extend({
   name,
@@ -31,7 +31,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.5,11.5 L7.5,12.5 L1.5,12.5 L1.5,11.5 L7.5,11.5 Z M11.5,7.5 L11.5,8.5 L1.5,8.5 L1.5,7.5 L11.5,7.5 Z M15.5,3.5 L15.5,4.5 L1.5,4.5 L1.5,3.5 L15.5,3.5 Z" transform="matrix(0 -1 -1 0 16.5 16.5)"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M758.8081664000001 489.6127065600001C771.27697472 502.10946816 771.2543136 522.34806144 758.757552 534.8168691200001L758.757552 534.8168691200001 383.6690304000001 909.0663616 338.4141952 863.8115328 690.7689683200001 512.20006272 338.4141952 160.8056710400001 383.6690304 115.5508371200001 758.41696832 489.22406272 758.757552 489.56206336Z"/></svg>;
   },
 
 });
