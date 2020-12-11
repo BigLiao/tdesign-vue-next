@@ -31,7 +31,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12,2 C12.5522847,2 13,2.44771525 13,3 L13,12 C13,12.5522847 12.5522847,13 12,13 L3,13 C2.44771525,13 2,12.5522847 2,12 L2,3 C2,2.44771525 2.44771525,2 3,2 L12,2 Z M12,3 L3,3 L3,12 L12,12 L12,3 Z M10,7.5 L10,11 L9,11 L9,7.5 L10,7.5 Z M8,4 L8,11 L7,11 L7,4 L8,4 Z M6,6.625 L6,11 L5,11 L5,6.625 L6,6.625 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M768 128C803.3462208 128 832 156.653776 832 192L832 768C832 803.3462208 803.3462208 832 768 832L192 832C156.653776 832 128 803.3462208 128 768L128 192C128 156.653776 156.653776 128 192 128L768 128ZM768 192L192 192 192 768 768 768 768 192ZM640 480L640 704 576 704 576 480 640 480ZM512 256L512 704 448 704 448 256 512 256ZM384 424L384 704 320 704 320 424 384 424Z"/></svg>;
   },
 
 });
