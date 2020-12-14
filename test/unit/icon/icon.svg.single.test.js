@@ -20,7 +20,7 @@ describe('Iconfont', () => {
               <t-icon-check-circle-filled size="xs" />
               <t-icon-check-circle-filled size="small" />
               <t-icon-check-circle-filled />
-              <t-icon-check-circle-filled size="middle" />
+              <t-icon-check-circle-filled size="medium" />
               <t-icon-check-circle-filled size="large" />
               <t-icon-check-circle-filled size="xl" />
               <t-icon-check-circle-filled size="25px" />
