@@ -63,6 +63,9 @@ export default {
         <div class="tdesign-demo-upload-table__status">状态</div>
         <div class="tdesign-demo-upload-table__operator">操作</div>
       </div>
+      <div v-if="!fileList.length" class="tdesign-demo-upload-table--empty">
+        <p>点击上方“选择文件”或将文件拖拽到此区域</p>
+      </div>
       <div class="tdesign-demo-upload-table-item" v-for="item in fileList" :key="item.uid">
         <div class="tdesign-demo-upload-table__name">
           <span>{{ item.name }}</span>
