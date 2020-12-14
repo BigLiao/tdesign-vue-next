@@ -8,7 +8,7 @@ export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px/2em
+    // xs/small/medium/large/xl/18px/2em
     size: {
       type: String,
     },
@@ -23,7 +23,7 @@ export default Vue.extend({
       ];
     },
     iconStyle(): object {
-      if (['xs', 'small', 'middle', 'large', 'xl'].includes(this.size)) return {};
+      if (['xs', 'small', 'medium', 'large', 'xl'].includes(this.size)) return {};
       return {
         'font-size': this.size,
       };
