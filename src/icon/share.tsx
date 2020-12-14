@@ -23,7 +23,7 @@ export default Vue.extend({
       ];
     },
     iconStyle(): object {
-      if (['xs', 'small', 'middle', 'large', 'xl'].includes(this.size)) return {};
+      if (['xs', 'small', 'medium', 'large', 'xl'].includes(this.size)) return {};
       return {
         'font-size': this.size,
       };
