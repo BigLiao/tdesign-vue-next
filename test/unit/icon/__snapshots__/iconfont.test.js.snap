@@ -2,7 +2,7 @@
 
 exports[`Iconfont :props :name 1`] = `<i class="t-icon t-icon-close"></i>`;
 
-exports[`Iconfont :props :size 1`] = `<div><i class="t-icon t-icon-close t-size-xs"></i><i class="t-icon t-icon-close t-size-s"></i><i class="t-icon t-icon-close t-size-m"></i><i class="t-icon t-icon-close t-size-l"></i><i class="t-icon t-icon-close t-size-xl"></i><i class="t-icon t-icon-close" style="font-size: 25px;"></i><i class="t-icon t-icon-close" style="font-size: 2em;"></i></div>`;
+exports[`Iconfont :props :size 1`] = `<div><i class="t-icon t-icon-close t-size-xs"></i><i class="t-icon t-icon-close t-size-s"></i><i class="t-icon t-icon-close"></i><i class="t-icon t-icon-close t-size-l"></i><i class="t-icon t-icon-close t-size-xl"></i><i class="t-icon t-icon-close" style="font-size: 25px;"></i><i class="t-icon t-icon-close" style="font-size: 2em;"></i></div>`;
 
 exports[`Iconfont :props :tag 1`] = `
 <div><i class="t-icon t-icon-close"></i><span class="t-icon t-icon-close"></span>
