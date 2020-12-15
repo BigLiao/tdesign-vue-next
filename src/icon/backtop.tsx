@@ -8,7 +8,7 @@ export default Vue.extend({
   name,
 
   props: {
-    // xs/small/middle/large/xl/18px/2em
+    // xs/small/medium/large/xl/18px/2em
     size: {
       type: String,
     },
@@ -23,7 +23,7 @@ export default Vue.extend({
       ];
     },
     iconStyle(): object {
-      if (['xs', 'small', 'middle', 'large', 'xl'].includes(this.size)) return {};
+      if (['xs', 'small', 'medium', 'large', 'xl'].includes(this.size)) return {};
       return {
         'font-size': this.size,
       };
@@ -31,7 +31,7 @@ export default Vue.extend({
   },
 
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M13.163,1.99938818 L13.163,2.99938818 L7.715,2.99938818 L13.1637085,8.44793949 L12.4566017,9.15504627 L8.006,4.704 L8.00685425,13.7910852 L7.00685425,13.7910852 L7.006,4.705 L2.55710678,9.15504627 L1.85,8.44793949 L7.148,3.15 C7.15518745,3.14275204 7.15708537,3.14088367 7.15899439,3.13903354 L7.297,2.99938818 L1.85,2.99938818 L1.85,1.99938818 L13.163,1.99938818 Z"/></svg>;
+    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M842.432 127.96084352L842.432 191.96084352 493.76 191.96084352 842.477344 540.66812736 797.2225088 585.92296128 512.384 301.06145536 512.438672 882.6294528 448.438672 882.6294528 448.384 301.12545536 163.65483392 585.92296128 118.4 540.66812736 467.008 191.96084352 118.4 191.96084352 118.4 127.96084352 842.432 127.96084352Z"/></svg>;
   },
 
 });
