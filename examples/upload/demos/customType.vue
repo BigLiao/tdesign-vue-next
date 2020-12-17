@@ -1,45 +1,3 @@
-<script>
-export default {
-  data: () => ({
-    fileList: [],
-  }),
-
-  methods: {
-    handleChange(fileList) {
-      console.log(fileList);
-    },
-
-    handleDelete(file) {
-      this.fileList = this.fileList.filter(item => item.uid !== file.uid);
-    },
-
-    beforeUpload() {
-      return true;
-    },
-
-    getStatusText(status) {
-      return {
-        success: '上传成功',
-        fail: '上传失败',
-        progress: '上传中',
-      }[status];
-    },
-
-    getFileSize(size) {
-      return `${(size / 1024 / 1024).toFixed(2)}Mb`;
-    },
-
-    getIcon(status) {
-      return {
-        success: { name: 'check-circle-filled', fill: 'green' },
-        fail: { name: 'error-circle-filled', fill: '#ff3e00' },
-        progress: { name: 'loading', fill: '#0052d9' },
-      }[status];
-    },
-  },
-};
-</script>
-
 <template>
   <section class="tdesign-demo-upload-multiple" style="width: 570px">
     <header class="tdesign-demo-upload-multiple-header">
@@ -52,7 +10,7 @@ export default {
         @change="handleChange"
         accept="image/*"
       >
-        <t-button theme="line" slot="trigger" icon="upload">选择文件</t-button>
+        <t-button theme="line" slot="trigger"><t-icon-upload slot="icon"/>选择文件</t-button>
       </t-upload>
     </header>
 
@@ -89,3 +47,48 @@ export default {
     </div>
   </section>
 </template>
+<script>
+import TIconUpload from '@tencent/tdesign-vue/lib/icon/upload';
+
+export default {
+  components: {
+    TIconUpload,
+  },
+  data: () => ({
+    fileList: [],
+  }),
+  methods: {
+    handleChange(fileList) {
+      console.log(fileList);
+    },
+
+    handleDelete(file) {
+      this.fileList = this.fileList.filter(item => item.uid !== file.uid);
+    },
+
+    beforeUpload() {
+      return true;
+    },
+
+    getStatusText(status) {
+      return {
+        success: '上传成功',
+        fail: '上传失败',
+        progress: '上传中',
+      }[status];
+    },
+
+    getFileSize(size) {
+      return `${(size / 1024 / 1024).toFixed(2)}Mb`;
+    },
+
+    getIcon(status) {
+      return {
+        success: { name: 'check-circle-filled', fill: 'green' },
+        fail: { name: 'error-circle-filled', fill: '#ff3e00' },
+        progress: { name: 'loading', fill: '#0052d9' },
+      }[status];
+    },
+  },
+};
+</script>
