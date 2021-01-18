@@ -4,7 +4,7 @@
                 @confirm="confirm"
                 @cancel="cancel"
   >
-    <t-button theme="primary">提交</t-button>
+    <t-button variant="base" theme="primary">提交</t-button>
   </t-popconfirm>
 </template>
 <script>
