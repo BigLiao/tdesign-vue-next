@@ -1,9 +1,9 @@
 <template>
   <div>
-    <t-button theme="primary" @click="()=>this.visibleNotModal = true">非模态可拖拽</t-button>
-    <t-button theme="primary" @click="()=>this.visibleBody = true">挂载在body</t-button>
-    <t-button theme="primary" @click="()=>this.visibleIdAttach = true">挂载特定元素</t-button>
-    <t-button theme="primary" @click="()=>this.visibleFunctionAttach = true">挂载函数返回节点</t-button>
+    <t-button variant="base" theme="primary" @click="()=>this.visibleNotModal = true">非模态可拖拽</t-button>
+    <t-button variant="base" theme="primary" @click="()=>this.visibleBody = true">挂载在body</t-button>
+    <t-button variant="base" theme="primary" @click="()=>this.visibleIdAttach = true">挂载特定元素</t-button>
+    <t-button variant="base" theme="primary" @click="()=>this.visibleFunctionAttach = true">挂载函数返回节点</t-button>
     <t-dialog
       header="对话框标题"
       body="对话框内容"
