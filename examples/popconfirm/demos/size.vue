@@ -8,10 +8,10 @@
             带描述的气泡确认框在主要说明之外增加了操作相关的详细描述带描述的气泡确认框在主要说明之外增加了操作
           </p>
         </template>
-        <t-button variant="base" theme="primary">默认</t-button>
+        <t-button theme="primary">默认</t-button>
       </t-popconfirm>
       <t-popconfirm theme="info" content="最小">
-        <t-button variant="base" theme="primary">最小</t-button>
+        <t-button theme="primary">最小</t-button>
       </t-popconfirm>
     </div>
   </div>
