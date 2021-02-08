@@ -6,7 +6,7 @@
     <t-button theme="primary" @click="()=>this.visible3 = true">自定义底部按钮（自定义组件）</t-button>
 
     <t-dialog
-      v-model="visible1"
+      :visible="visible1"
       header="提示"
       body="自定义底部按钮，直接传入文字"
       confirmBtn="前往支付"
@@ -15,7 +15,7 @@
     </t-dialog>
 
     <t-dialog
-      v-model="visible2"
+      :visible="visible2"
       header="提示"
       body="自定义底部按钮，传入 ButttonProps"
       :confirmBtn="{
@@ -31,7 +31,7 @@
     </t-dialog>
 
     <t-dialog
-      v-model="visible3"
+      :visible="visible3"
       header="提示"
       body="自定义底部按钮，传入自定义组件"
       :confirmBtn="getConfirmBtn"

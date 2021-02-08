@@ -5,7 +5,7 @@
     <t-button theme="primary" @click="()=>this.visible3 = true">渲染函数定义内容</t-button>
     <t-button theme="primary" @click="()=>this.visible4 = true">插槽方式定义内容</t-button>
 
-    <t-dialog :header="false" body="对话框内容" v-model="visible1">
+    <t-dialog :header="false" body="对话框内容" :visible="visible1" :onClose="close1" :onClickConfirm="close1" >
       <div slot="body">
         <div>不需要标题的内容</div>
         <div>我是内容</div>
@@ -16,10 +16,12 @@
     </t-dialog>
 
     <t-dialog
-      v-model="visible2"
+      :visible="visible2"
+      :closeBtn="true"
       header="提示"
       body="对话框内容"
       :footer="false"
+      :onClose="close2" :onClickConfirm="close2"
     >
       <div slot="body">
         <div>不需要底部按钮的内容</div>
@@ -31,14 +33,15 @@
     </t-dialog>
 
     <t-dialog
-      v-model="visible3"
+      :visible="visible3"
       header="标题"
       :body="renderDialog3Body"
+      :onClose="close3" :onClickConfirm="close3"
     >
       <div slot="body">被渲染函数覆盖的插槽内容</div>
     </t-dialog>
 
-    <t-dialog header="对话框标题" v-model="visible4">
+    <t-dialog header="对话框标题" :visible="visible4" :onClose="close4" :onClickConfirm="close4" >
       <div slot="body">
         <div>我是内容</div>
         <div>我是内容</div>
@@ -64,6 +67,19 @@ export default Vue.extend({
   methods: {
     renderDialog3Body() {
       return this.$createElement('div', [this.$createElement('h1', '参数传递优先于插槽内容'), '这是渲染函数输出结果']);
+    },
+
+    close1() {
+      this.visible1 = false;
+    },
+    close2() {
+      this.visible2 = false;
+    },
+    close3() {
+      this.visible3 = false;
+    },
+    close4() {
+      this.visible4 = false;
     },
   },
 });
