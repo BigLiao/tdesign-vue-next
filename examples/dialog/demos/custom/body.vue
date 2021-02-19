@@ -1,9 +1,9 @@
 <template>
   <div>
-    <t-button theme="primary" @click="()=>this.visible1 = true">隐藏标题</t-button>
-    <t-button theme="primary" @click="()=>this.visible2 = true">隐藏底部</t-button>
-    <t-button theme="primary" @click="()=>this.visible3 = true">渲染函数定义内容</t-button>
-    <t-button theme="primary" @click="()=>this.visible4 = true">插槽方式定义内容</t-button>
+    <t-button theme="primary" @click="visible2 = true">隐藏底部</t-button>
+    <t-button theme="primary" @click="visible1 = true">隐藏标题</t-button>
+    <t-button theme="primary" @click="visible3 = true">渲染函数定义内容</t-button>
+    <t-button theme="primary" @click="visible4 = true">插槽方式定义内容</t-button>
 
     <t-dialog :header="false" body="对话框内容" :visible="visible1" :onClose="close1" :onClickConfirm="close1" >
       <div slot="body">
