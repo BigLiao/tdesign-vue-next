@@ -2,36 +2,36 @@
 
 exports[`Iconfont :props :name 1`] = `
 <svg class="t-icon t-icon-close">
-  <use xlink:href="#t-icon-close"></use>
+  <use href="#t-icon-close"></use>
 </svg>
 `;
 
 exports[`Iconfont :props :size 1`] = `
 <div><svg class="t-icon t-icon-close t-size-xs">
-    <use xlink:href="#t-icon-close"></use>
+    <use href="#t-icon-close"></use>
   </svg><svg class="t-icon t-icon-close t-size-s">
-    <use xlink:href="#t-icon-close"></use>
+    <use href="#t-icon-close"></use>
   </svg><svg class="t-icon t-icon-close">
-    <use xlink:href="#t-icon-close"></use>
+    <use href="#t-icon-close"></use>
   </svg><svg class="t-icon t-icon-close t-size-l">
-    <use xlink:href="#t-icon-close"></use>
+    <use href="#t-icon-close"></use>
   </svg><svg class="t-icon t-icon-close t-size-xl">
-    <use xlink:href="#t-icon-close"></use>
+    <use href="#t-icon-close"></use>
   </svg><svg class="t-icon t-icon-close" style="font-size: 25px;">
-    <use xlink:href="#t-icon-close"></use>
+    <use href="#t-icon-close"></use>
   </svg><svg class="t-icon t-icon-close" style="font-size: 2em;">
-    <use xlink:href="#t-icon-close"></use>
+    <use href="#t-icon-close"></use>
   </svg></div>
 `;
 
 exports[`Iconfont :props :url array 1`] = `
 <div><svg class="t-icon home">
-    <use xlink:href="#home"></use>
+    <use href="#home"></use>
   </svg></div>
 `;
 
 exports[`Iconfont :props :url string 1`] = `
 <div><svg class="t-icon home">
-    <use xlink:href="#home"></use>
+    <use href="#home"></use>
   </svg></div>
 `;

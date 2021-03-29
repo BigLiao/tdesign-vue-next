@@ -1,10 +1,10 @@
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 
 const name = `${prefix}-icon-swap`;
 
-export default Vue.extend({
+export default defineComponent({
   name,
 
   props: {
