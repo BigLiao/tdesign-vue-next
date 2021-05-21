@@ -11,18 +11,19 @@ export default defineComponent({
     // small/medium/large/xl/18px/2em
     size: {
       type: String,
+      default: undefined,
     },
   },
 
   computed: {
-    classes(): Array<string|object> {
+    classes(): ClassName {
       return [
         `${prefix}-icon`,
         name,
         CLASSNAMES.SIZE[this.size],
       ];
     },
-    iconStyle(): object {
+    iconStyle(): Record<string, any> {
       if (['small', 'medium', 'large'].includes(this.size)) return {};
       return {
         'font-size': this.size,
