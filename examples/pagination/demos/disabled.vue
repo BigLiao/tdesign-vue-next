@@ -6,7 +6,7 @@
       show-jumper
       show-sizer
       :total="100"
-      :page-size="pageSize"
+      v-model:pageSize="pageSize"
     />
   </div>
 </template>
