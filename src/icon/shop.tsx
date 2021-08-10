@@ -1,6 +1,7 @@
 import { defineComponent } from 'vue';
 import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
+import { ClassName } from '../common';
 
 const name = `${prefix}-icon-shop`;
 
