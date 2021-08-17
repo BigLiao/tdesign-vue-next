@@ -2,9 +2,11 @@
   <div>
     <t-select
       v-model="value"
-      style="width: 200px;"
       placeholder="-请选择-"
+      multiple
+      :max="2"
       :options="options"
+      style="width: 400px;"
     />
   </div>
 </template>
@@ -14,17 +16,16 @@ export default {
   data() {
     return {
       options: [{
-        label: '上海',
-        value: 'shanghai',
+        label: '选项一',
+        value: '1',
       }, {
-        label: '北京',
-        value: 'beijing',
-        disabled: true,
+        label: '选项二',
+        value: '2',
       }, {
-        label: '深圳',
-        value: 'shenzhen',
+        label: '选项三',
+        value: '3',
       }],
-      value: '',
+      value: [],
     };
   },
 };

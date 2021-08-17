@@ -2,21 +2,18 @@
   <div>
     <t-select
       v-model="value"
-      class="demo-select-base"
-      clearable
+      style="width: 200px;display: inline-block;margin-right: 20px;"
+      placeholder="-请选择-"
       :keys="{value: 'data', label:'text'}"
-      @change="handleChange"
-      @visible-change="visibleChange"
-    >
-      <t-option
-        v-for="(item, index) in options"
-        :value="item.data"
-        :label="item.text"
-        :key="index"
-      >
-        {{ item.text }}
-      </t-option>
-    </t-select>
+      :options="options"
+    />
+    <t-select
+      v-model="value2"
+      placeholder="-请选择-"
+      :keys="{value: 'city.id', label:'city.name'}"
+      :options="options2"
+      style="width: 200px;display: inline-block;"
+    />
   </div>
 </template>
 
@@ -38,23 +35,30 @@ export default {
           data: '3',
         },
       ],
+      options2: [
+        {
+          city: {
+            id: 'shanghai',
+            name: '上海',
+          },
+        },
+        {
+          city: {
+            id: 'shenzhen',
+            name: '深圳',
+          },
+        },
+        {
+          city: {
+            id: 'guangzhou',
+            name: '广州',
+          },
+          disabled: true,
+        },
+      ],
       value: '1',
+      value2: 'shanghai',
     };
-  },
-  methods: {
-    handleChange(value) {
-      console.log(value);
-    },
-    visibleChange(val) {
-      console.log('visible', val);
-    },
   },
 };
 </script>
-<style scoped>
-.demo-select-base {
-  width: 200px;
-  display: inline-block;
-  margin: 0 20px;
-}
-</style>
