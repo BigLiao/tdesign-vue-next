@@ -2,12 +2,10 @@
   <div>
     <t-select
       v-model="value"
-      class="demo-select-base"
-      @change="handleChange"
-      @visible-change="visibleChange"
+      style="width: 200px;"
+      placeholder="-请选择-"
       :options="options"
-    >
-    </t-select>
+    />
   </div>
 </template>
 
@@ -29,20 +27,5 @@ export default {
       value: '',
     };
   },
-  methods: {
-    handleChange(value) {
-      console.log(value);
-    },
-    visibleChange(val) {
-      console.log('visible', val);
-    },
-  },
 };
 </script>
-<style scoped>
-  .demo-select-base {
-    width: 200px;
-    display: inline-block;
-    margin: 0 20px;
-  }
-</style>

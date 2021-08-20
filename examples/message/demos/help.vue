@@ -5,3 +5,12 @@
   </div>
 </template>
 
+<style lang="less" scoped>
+  .t-demo-message {
+    .t-message,
+    .t-button {
+      margin-bottom: 16px;
+    }
+  }
+  </style>
+  
