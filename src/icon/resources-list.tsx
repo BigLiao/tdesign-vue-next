@@ -3,7 +3,7 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import { ClassName } from '../common';
 
-const name = `${prefix}-icon-caret-down-small`;
+const name = `${prefix}-icon-resources-list`;
 
 export default defineComponent({
   name,
@@ -41,7 +41,7 @@ export default defineComponent({
   },
 
   render() {
-    return <svg onClick={this.handleClick} class={this.classes} style={this.iconStyle} viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M704 384H320L512 672 704 384Z" clip-rule="evenodd"/></svg>;
+    return <svg onClick={this.handleClick} class={this.classes} style={this.iconStyle} viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M960 416C960 451.34592 931.3472 480 896 480H128C92.65408 480 64 451.34592 64 416V96H960V416ZM895.936 159.936H127.936L128 416H896L895.936 159.936ZM64 544H960V864C960 899.3472 931.3472 928 896 928H128C92.65408 928 64 899.3472 64 864V544ZM895.936 607.936H127.936L128 864H896L895.936 607.936ZM192 320V256H448V320H192ZM192 704V768H448V704H192Z" clip-rule="evenodd" opacity=".9"/></svg>;
   },
 
 });

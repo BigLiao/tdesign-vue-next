@@ -3,7 +3,7 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import { ClassName } from '../common';
 
-const name = `${prefix}-icon-edit`;
+const name = `${prefix}-icon-edit-1`;
 
 export default defineComponent({
   name,

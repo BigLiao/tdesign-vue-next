@@ -3,7 +3,7 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import { ClassName } from '../common';
 
-const name = `${prefix}-icon-clear-rectangle`;
+const name = `${prefix}-icon-close-rectangle`;
 
 export default defineComponent({
   name,
