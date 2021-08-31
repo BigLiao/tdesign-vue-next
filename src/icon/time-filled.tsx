@@ -16,6 +16,8 @@ export default defineComponent({
     },
   },
 
+  emits: ['click'],
+
   computed: {
     classes(): ClassName {
       return [
@@ -32,8 +34,14 @@ export default defineComponent({
     },
   },
 
+  methods: {
+    handleClick(e: MouseEvent) {
+      this.$emit('click', { e });
+    },
+  },
+
   render() {
-    return <svg class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M512 96C741.7504576 96 928 282.24954432 928 512 928 741.7504576 741.7504576 928 512 928 282.24954432 928 96 741.7504576 96 512 96 282.24954432 282.24954432 96 512 96ZM544 256L480 256 480 544 480.064 544 676.1073792 708.5536256 717.2457856 659.526784 544 514.176 544 256Z"/></svg>;
+    return <svg onClick={this.handleClick} class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M512 96C741.7504576 96 928 282.24954432 928 512 928 741.7504576 741.7504576 928 512 928 282.24954432 928 96 741.7504576 96 512 96 282.24954432 282.24954432 96 512 96ZM544 256L480 256 480 544 480.064 544 676.1073792 708.5536256 717.2457856 659.526784 544 514.176 544 256Z"/></svg>;
   },
 
 });

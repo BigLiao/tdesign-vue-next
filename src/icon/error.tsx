@@ -3,18 +3,20 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import { ClassName } from '../common';
 
-const name = `${prefix}-icon-check-line`;
+const name = `${prefix}-icon-error-circle`;
 
 export default defineComponent({
   name,
 
   props: {
-    // xs/small/medium/large/xl/18px/2em
+    // small/medium/large/xl/18px/2em
     size: {
       type: String,
       default: undefined,
     },
   },
+
+  emits: ['click'],
 
   computed: {
     classes(): ClassName {
@@ -25,19 +27,21 @@ export default defineComponent({
       ];
     },
     iconStyle(): Record<string, any> {
-      if (['xs', 'small', 'medium', 'large', 'xl'].includes(this.size)) return {};
+      if (['small', 'medium', 'large'].includes(this.size)) return {};
       return {
         'font-size': this.size,
       };
     },
   },
 
-  render() {
-    return (
-      <svg class={this.classes} style={this.iconStyle} viewBox="0 0 1024 1024" version="1.1"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M283.568 489.36l45.264-45.264 135.76 135.76L690.88 353.6l45.264 45.264L509.84 625.12l-45.248 45.248z" p-id="4547"></path>
-      </svg>
-    );
+  methods: {
+    handleClick(e: MouseEvent) {
+      this.$emit('click', { e });
+    },
   },
+
+  render() {
+    return <svg onClick={this.handleClick} class={this.classes} style={this.iconStyle} viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M544 128H480V704H544V128ZM544 832H480V896H544V832Z" clip-rule="evenodd"/></svg>;
+  },
+
 });

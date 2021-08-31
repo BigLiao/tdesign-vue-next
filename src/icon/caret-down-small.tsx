@@ -3,7 +3,7 @@ import { prefix } from '../config';
 import CLASSNAMES from '../utils/classnames';
 import { ClassName } from '../common';
 
-const name = `${prefix}-icon-/** SVG NAME */>`;
+const name = `${prefix}-icon-caret-down`;
 
 export default defineComponent({
   name,
@@ -15,6 +15,8 @@ export default defineComponent({
       default: undefined,
     },
   },
+
+  emits: ['click'],
 
   computed: {
     classes(): ClassName {
@@ -32,8 +34,14 @@ export default defineComponent({
     },
   },
 
+  methods: {
+    handleClick(e: MouseEvent) {
+      this.$emit('click', { e });
+    },
+  },
+
   render() {
-    return <svg>/** SVG CODE */</svg>;
+    return <svg onClick={this.handleClick} class={this.classes} style={this.iconStyle} viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M704 384H320L512 672 704 384Z" clip-rule="evenodd"/></svg>;
   },
 
 });
