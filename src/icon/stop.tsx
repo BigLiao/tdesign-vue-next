@@ -41,7 +41,7 @@ export default defineComponent({
   },
 
   render() {
-    return <svg onClick={this.handleClick} class={this.classes} style={this.iconStyle}  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M384 192L384 832 320 832 320 192 384 192ZM704 192L704 832 640 832 640 192 704 192Z"/></svg>;
+    return <svg onClick={this.handleClick} class={this.classes} style={this.iconStyle} viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M384 192L384 832 320 832 320 192 384 192ZM704 192L704 832 640 832 640 192 704 192Z"/></svg>;
   },
 
 });
