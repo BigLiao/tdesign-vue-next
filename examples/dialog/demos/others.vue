@@ -17,7 +17,7 @@
       v-model:visible="visibleBody"
       attach="body"
       header="挂载在body"
-      :onClickConfirm="()=>this.visibleBody = false"
+      :onConfirm="()=>this.visibleBody = false"
     >
       <template #body>
         <div>我是被挂载到body元素的对话框</div>
@@ -32,7 +32,7 @@
       v-model:visible="visibleIdAttach"
       attach="#app"
       header="挂载到id为app的元素"
-      :onClickConfirm="()=>this.visibleIdAttach = false"
+      :onConfirm="()=>this.visibleIdAttach = false"
     >
       <template #body>
         <div>通过querySelect指定元素挂载</div>
@@ -47,7 +47,7 @@
       v-model:visible="visibleFunctionAttach"
       :attach="getAttach"
       header="函数返回挂载节点"
-      :onClickConfirm="()=>this.visibleFunctionAttach = false"
+      :onConfirm="()=>this.visibleFunctionAttach = false"
     >
       <template #body>
         <div>指定函数返回的节点为挂载点</div>
@@ -63,7 +63,7 @@
       v-model:visible="visibleModal"
       mode="modal"
       draggable
-      :onClickConfirm="()=>this.visibleModal = false"
+      :onConfirm="()=>this.visibleModal = false"
     >
       <template #body>
         <div>默认点击蒙层或按ESC可关闭</div>
@@ -76,7 +76,7 @@
       header="普通对话框"
       v-model:visible="visibleNormal"
       mode="normal"
-      :onClickConfirm="()=>this.visibleNormal = false"
+      :onConfirm="()=>this.visibleNormal = false"
     >
       <template #body>
         <div>普通对话框不可拖拽</div>
@@ -90,7 +90,7 @@
       v-model:visible="visibleModelessDrag"
       mode="modeless"
       draggable
-      :onClickConfirm="()=>this.visibleModelessDrag = false"
+      :onConfirm="()=>this.visibleModelessDrag = false"
     >
       <template #body>
         <div>我是内容</div>
@@ -102,7 +102,7 @@
       header="非模态对话框-不可拖拽"
       v-model:visible="visibleModeless"
       mode="modeless"
-      :onClickConfirm="()=>this.visibleModeless = false"
+      :onConfirm="()=>this.visibleModeless = false"
     >
       <template #body>
         <div>我是内容</div>
