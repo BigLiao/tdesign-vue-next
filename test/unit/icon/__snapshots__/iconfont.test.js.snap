@@ -1,16 +1,68 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Iconfont :props :name 1`] = `<i class="t-icon t-icon-close"></i>`;
+exports[`Iconfont :props :name 1`] = `
+<i
+  class="t-icon t-icon-close"
+/>
+`;
 
-exports[`Iconfont :props :size 1`] = `<div><i class="t-icon t-icon-close t-size-xs"></i><i class="t-icon t-icon-close t-size-s"></i><i class="t-icon t-icon-close"></i><i class="t-icon t-icon-close t-size-l"></i><i class="t-icon t-icon-close t-size-xl"></i><i class="t-icon t-icon-close" style="font-size: 25px;"></i><i class="t-icon t-icon-close" style="font-size: 2em;"></i></div>`;
-
-exports[`Iconfont :props :tag 1`] = `
-<div><i class="t-icon t-icon-close"></i><span class="t-icon t-icon-close"></span>
-  <div class="t-icon t-icon-close"></div>
-  <p class="t-icon t-icon-close"></p>
+exports[`Iconfont :props :size 1`] = `
+<div>
+  <i
+    class="t-icon t-icon-close t-size-xs"
+  />
+  <i
+    class="t-icon t-icon-close t-size-s"
+  />
+  <i
+    class="t-icon t-icon-close"
+  />
+  <i
+    class="t-icon t-icon-close t-size-l"
+  />
+  <i
+    class="t-icon t-icon-close t-size-xl"
+  />
+  <i
+    class="t-icon t-icon-close"
+    style="font-size: 25px;"
+  />
+  <i
+    class="t-icon t-icon-close"
+    style="font-size: 2em;"
+  />
 </div>
 `;
 
-exports[`Iconfont :props :url array 1`] = `<div><i class="t-icon home"></i></div>`;
+exports[`Iconfont :props :tag 1`] = `
+<div>
+  <i
+    class="t-icon t-icon-close"
+  />
+  <span
+    class="t-icon t-icon-close"
+  />
+  <div
+    class="t-icon t-icon-close"
+  />
+  <p
+    class="t-icon t-icon-close"
+  />
+</div>
+`;
 
-exports[`Iconfont :props :url string 1`] = `<div><i class="t-icon home"></i></div>`;
+exports[`Iconfont :props :url array 1`] = `
+<div>
+  <i
+    class="t-icon home"
+  />
+</div>
+`;
+
+exports[`Iconfont :props :url string 1`] = `
+<div>
+  <i
+    class="t-icon home"
+  />
+</div>
+`;

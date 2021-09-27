@@ -1,37 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Iconfont :props :name 1`] = `
-<svg class="t-icon t-icon-close">
-  <use href="#t-icon-close"></use>
+<svg
+  class="t-icon t-icon-close"
+>
+  <use
+    href="#t-icon-close"
+  />
 </svg>
 `;
 
 exports[`Iconfont :props :size 1`] = `
-<div><svg class="t-icon t-icon-close t-size-xs">
-    <use href="#t-icon-close"></use>
-  </svg><svg class="t-icon t-icon-close t-size-s">
-    <use href="#t-icon-close"></use>
-  </svg><svg class="t-icon t-icon-close">
-    <use href="#t-icon-close"></use>
-  </svg><svg class="t-icon t-icon-close t-size-l">
-    <use href="#t-icon-close"></use>
-  </svg><svg class="t-icon t-icon-close t-size-xl">
-    <use href="#t-icon-close"></use>
-  </svg><svg class="t-icon t-icon-close" style="font-size: 25px;">
-    <use href="#t-icon-close"></use>
-  </svg><svg class="t-icon t-icon-close" style="font-size: 2em;">
-    <use href="#t-icon-close"></use>
-  </svg></div>
+<div>
+  <svg
+    class="t-icon t-icon-close t-size-xs"
+  >
+    <use
+      href="#t-icon-close"
+    />
+  </svg>
+  <svg
+    class="t-icon t-icon-close t-size-s"
+  >
+    <use
+      href="#t-icon-close"
+    />
+  </svg>
+  <svg
+    class="t-icon t-icon-close"
+  >
+    <use
+      href="#t-icon-close"
+    />
+  </svg>
+  <svg
+    class="t-icon t-icon-close t-size-l"
+  >
+    <use
+      href="#t-icon-close"
+    />
+  </svg>
+  <svg
+    class="t-icon t-icon-close t-size-xl"
+  >
+    <use
+      href="#t-icon-close"
+    />
+  </svg>
+  <svg
+    class="t-icon t-icon-close"
+    style="font-size: 25px;"
+  >
+    <use
+      href="#t-icon-close"
+    />
+  </svg>
+  <svg
+    class="t-icon t-icon-close"
+    style="font-size: 2em;"
+  >
+    <use
+      href="#t-icon-close"
+    />
+  </svg>
+</div>
 `;
 
 exports[`Iconfont :props :url array 1`] = `
-<div><svg class="t-icon home">
-    <use href="#home"></use>
-  </svg></div>
+<div>
+  <svg
+    class="t-icon home"
+  >
+    <use
+      href="#home"
+    />
+  </svg>
+</div>
 `;
 
 exports[`Iconfont :props :url string 1`] = `
-<div><svg class="t-icon home">
-    <use href="#home"></use>
-  </svg></div>
+<div>
+  <svg
+    class="t-icon home"
+  >
+    <use
+      href="#home"
+    />
+  </svg>
+</div>
 `;

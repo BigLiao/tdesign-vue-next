@@ -33,7 +33,7 @@ describe('Iconfont', () => {
           );
         },
       });
-      expect(wrapper.html()).toMatchSnapshot();
+      expect(wrapper.element).toMatchSnapshot();
     });
   });
 });
