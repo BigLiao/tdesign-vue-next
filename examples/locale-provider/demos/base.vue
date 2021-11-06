@@ -247,8 +247,8 @@ const TREE_OPTIONS = [
 ];
 
 const TREE_DATA = [
-  { value: '1', label: '目录图标', children: [{ label: '1.1' }, { label: '1.2' }] },
-  { value: '2', label: '可配置', children: [{ label: '2.1' }, { label: '2.2' }] },
+  { value: '1', label: 'directory', children: [{ label: '1.1' }, { label: '1.2' }] },
+  { value: '2', label: 'configurable', children: [{ label: '2.1' }, { label: '2.2' }] },
 ];
 
 export default {
