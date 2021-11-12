@@ -18,47 +18,54 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      options: [
-        {
-          text: '已选择的选项',
-          data: '1',
-        },
-        {
-          text: '短的选项二',
-          data: '2',
-        },
-        {
-          text: '很长很长很长的选项三',
-          data: '3',
-        },
-      ],
-      options2: [
-        {
-          city: {
-            id: 'shanghai',
-            name: '上海',
-          },
-        },
-        {
-          city: {
-            id: 'shenzhen',
-            name: '深圳',
-          },
-        },
-        {
-          city: {
-            id: 'guangzhou',
-            name: '广州',
-          },
-          disabled: true,
-        },
-      ],
-      value: '1',
-      value2: 'shanghai',
-    };
+import { defineComponent, ref } from 'vue';
+
+const options = [
+  {
+    text: '已选择的选项',
+    data: '1',
   },
-};
+  {
+    text: '短的选项二',
+    data: '2',
+  },
+  {
+    text: '很长很长很长的选项三',
+    data: '3',
+  }
+]
+
+const options2 = [
+  {
+    city: {
+      id: 'shanghai',
+      name: '上海',
+    },
+  },
+  {
+    city: {
+      id: 'shenzhen',
+      name: '深圳',
+    },
+  },
+  {
+    city: {
+      id: 'guangzhou',
+      name: '广州',
+    },
+    disabled: true,
+  }
+]
+export default defineComponent({
+  setup() {
+    const value = ref('1');
+    const value2 = ref('shanghai');
+    return {
+      options,
+      options2,
+      value,
+      value2,
+    }
+  },
+});
 </script>

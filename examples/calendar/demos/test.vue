@@ -11,7 +11,9 @@
 </template>
 
 <script lang="jsx">
-export default {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   data() {
     return {
       range: [
@@ -114,5 +116,5 @@ export default {
       );
     },
   },
-};
+});
 </script>
