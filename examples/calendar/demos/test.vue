@@ -1,17 +1,15 @@
-
 <template>
   <t-calendar
     :range="range"
     :head="renderHead"
     :cell="renderCell"
-    :cellAppend="renderCellAppend"
-    :controllerConfig="controllerConfig"
-  >
-  </t-calendar>
+    :cell-append="renderCellAppend"
+    :controller-config="controllerConfig"
+  />
 </template>
 
 <script lang="jsx">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   data() {
@@ -101,7 +99,7 @@ export default defineComponent({
             },
           },
         },
-        params.formattedDate
+        params.formattedDate,
       );
     },
     renderCellAppend(h, params) {
@@ -112,7 +110,7 @@ export default defineComponent({
             fontWeight: params.isCurrent ? 700 : 500,
           },
         },
-        params.formattedDate
+        params.formattedDate,
       );
     },
   },

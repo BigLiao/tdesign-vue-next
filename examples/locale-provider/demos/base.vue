@@ -1,10 +1,23 @@
 <template>
-  <t-locale-provider :globalLocale="globalLocale" style="padding: 16px">
-    <t-pagination v-model="current" :total="100" show-jumper :maxPageBtn="5"/>
+  <t-locale-provider
+    :global-locale="globalLocale"
+    style="padding: 16px"
+  >
+    <t-pagination
+      v-model="current"
+      :total="100"
+      show-jumper
+      :max-page-btn="5"
+    />
     <br>
-    <t-calendar></t-calendar>
+    <t-calendar />
     <br>
-    <t-transfer :data="transferList" v-model="transferTargetValue" v-model:checked="transferChecked" :search="true" />
+    <t-transfer
+      v-model="transferTargetValue"
+      v-model:checked="transferChecked"
+      :data="transferList"
+      :search="true"
+    />
     <br><br>
     <div style="width: 480px">
       <t-dialog
@@ -16,26 +29,47 @@
       />
     </div>
     <br><br>
-    <t-button theme="primary" @click="openDialog">Open Dialog</t-button>
+    <t-button
+      theme="primary"
+      @click="openDialog"
+    >
+      Open Dialog
+    </t-button>
     <br><br>
-    <t-button theme="primary" @click="drawerVisible = true">Open Drawer</t-button>
-    <t-drawer v-model:visible="drawerVisible" header="Drawer" :onConfirm="() => drawerVisible = false" :closeBtn="true">
+    <t-button
+      theme="primary"
+      @click="drawerVisible = true"
+    >
+      Open Drawer
+    </t-button>
+    <t-drawer
+      v-model:visible="drawerVisible"
+      header="Drawer"
+      :on-confirm="() => drawerVisible = false"
+      :close-btn="true"
+    >
       <p>This is a controlled drawer</p>
     </t-drawer>
     <br><br>
-    <t-popconfirm theme="default" content="Do you want to delete">
+    <t-popconfirm
+      theme="default"
+      content="Do you want to delete"
+    >
       <t-button>Popconfirm</t-button>
     </t-popconfirm>
     <br><br>
     <t-table
       :data="[]"
       :columns="columns"
-      rowKey="id"
-    ></t-table>
+      row-key="id"
+    />
     <!-- 数组件空数据 -->
-    <t-tree :data="[]"/>
+    <t-tree :data="[]" />
     <!-- 数组件自定义层级图标 -->
-    <t-tree :data="treeData" transition/>
+    <t-tree
+      :data="treeData"
+      transition
+    />
     <br><br>
     <t-select
       v-model="selectValue1"
@@ -58,11 +92,11 @@
       v-model="selectValue2"
       placeholder="multiple remote select"
       :options="options2"
-      :onSearch="remoteFilterMethod"
+      :on-search="remoteFilterMethod"
       :loading="selectLoading"
       multiple
       filterable
-      reserveKeyword
+      reserve-keyword
       style="width: 400px;"
     />
     <br><br>
@@ -86,10 +120,23 @@
     />
     <br><br><br>
     <t-steps :current="2">
-      <t-step-item title="have completed the steps" content="here is the tip"></t-step-item>
-      <t-step-item title="have completed the steps" content="here is the tip"></t-step-item>
-      <t-step-item title="the wrong step" status="error" content="custom error icon"></t-step-item>
-      <t-step-item title="make the steps" content="here is the tip"></t-step-item>
+      <t-step-item
+        title="have completed the steps"
+        content="here is the tip"
+      />
+      <t-step-item
+        title="have completed the steps"
+        content="here is the tip"
+      />
+      <t-step-item
+        title="the wrong step"
+        status="error"
+        content="custom error icon"
+      />
+      <t-step-item
+        title="make the steps"
+        content="here is the tip"
+      />
     </t-steps>
     <br><br>
   </t-locale-provider>

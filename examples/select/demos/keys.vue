@@ -32,8 +32,8 @@ const options = [
   {
     text: '很长很长很长的选项三',
     data: '3',
-  }
-]
+  },
+];
 
 const options2 = [
   {
@@ -54,8 +54,8 @@ const options2 = [
       name: '广州',
     },
     disabled: true,
-  }
-]
+  },
+];
 export default defineComponent({
   setup() {
     const value = ref('1');
@@ -65,7 +65,7 @@ export default defineComponent({
       options2,
       value,
       value2,
-    }
+    };
   },
 });
 </script>
