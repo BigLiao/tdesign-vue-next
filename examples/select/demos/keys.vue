@@ -2,17 +2,17 @@
   <div>
     <t-select
       v-model="value"
-      style="width: 200px;display: inline-block;margin-right: 20px;"
+      style="width: 200px; display: inline-block; margin-right: 20px"
       placeholder="-请选择-"
-      :keys="{value: 'data', label:'text'}"
+      :keys="{ value: 'data', label: 'text' }"
       :options="options"
     />
     <t-select
       v-model="value2"
       placeholder="-请选择-"
-      :keys="{value: 'city.id', label:'city.name'}"
+      :keys="{ value: 'city.id', label: 'city.name' }"
       :options="options2"
-      style="width: 200px;display: inline-block;"
+      style="width: 200px; display: inline-block"
     />
   </div>
 </template>

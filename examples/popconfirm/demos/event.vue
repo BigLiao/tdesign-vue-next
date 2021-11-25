@@ -1,13 +1,6 @@
 <template>
-  <t-popconfirm
-    theme="default"
-    content="您确定要提交吗"
-    @confirm="confirm"
-    @cancel="cancel"
-  >
-    <t-button theme="primary">
-      提交
-    </t-button>
+  <t-popconfirm theme="default" content="您确定要提交吗" @confirm="confirm" @cancel="cancel">
+    <t-button theme="primary"> 提交 </t-button>
   </t-popconfirm>
 </template>
 <script>

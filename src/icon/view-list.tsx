@@ -20,11 +20,7 @@ export default defineComponent({
 
   computed: {
     classes(): ClassName {
-      return [
-        `${prefix}-icon`,
-        name,
-        CLASSNAMES.SIZE[this.size],
-      ];
+      return [`${prefix}-icon`, name, CLASSNAMES.SIZE[this.size]];
     },
     iconStyle(): Record<string, any> {
       if (['small', 'medium', 'large'].includes(this.size)) return {};
@@ -41,7 +37,21 @@ export default defineComponent({
   },
 
   render() {
-    return <svg onClick={this.handleClick} class={this.classes} style={this.iconStyle} viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-opacity=".9" fill-rule="evenodd" d="M960 704L960 768 64 768 64 704 960 704ZM960 448L960 512 64 512 64 448 960 448ZM960 192L960 256 64 256 64 192 960 192Z"/></svg>;
+    return (
+      <svg
+        onClick={this.handleClick}
+        class={this.classes}
+        style={this.iconStyle}
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-opacity=".9"
+          fill-rule="evenodd"
+          d="M960 704L960 768 64 768 64 704 960 704ZM960 448L960 512 64 512 64 448 960 448ZM960 192L960 256 64 256 64 192 960 192Z"
+        />
+      </svg>
+    );
   },
-
 });
