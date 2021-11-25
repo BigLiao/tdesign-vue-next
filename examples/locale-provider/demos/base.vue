@@ -1,93 +1,54 @@
 <template>
-  <t-locale-provider
-    :global-locale="globalLocale"
-    style="padding: 16px"
-  >
-    <t-pagination
-      v-model="current"
-      :total="100"
-      show-jumper
-      :max-page-btn="5"
-    />
-    <br>
+  <t-locale-provider :global-locale="globalLocale" style="padding: 16px">
+    <t-pagination v-model="current" :total="100" show-jumper :max-page-btn="5" />
+    <br />
     <t-calendar />
-    <br>
-    <t-transfer
-      v-model="transferTargetValue"
-      v-model:checked="transferChecked"
-      :data="transferList"
-      :search="true"
-    />
-    <br><br>
+    <br />
+    <t-transfer v-model="transferTargetValue" v-model:checked="transferChecked" :data="transferList" :search="true" />
+    <br /><br />
     <div style="width: 480px">
-      <t-dialog
-        :visible="true"
-        header="confirm"
-        body="Would you like to be my friends？"
-        mode="normal"
-        theme="info"
-      />
+      <t-dialog :visible="true" header="confirm" body="Would you like to be my friends？" mode="normal" theme="info" />
     </div>
-    <br><br>
-    <t-button
-      theme="primary"
-      @click="openDialog"
-    >
-      Open Dialog
-    </t-button>
-    <br><br>
-    <t-button
-      theme="primary"
-      @click="drawerVisible = true"
-    >
-      Open Drawer
-    </t-button>
+    <br /><br />
+    <t-button theme="primary" @click="openDialog"> Open Dialog </t-button>
+    <br /><br />
+    <t-button theme="primary" @click="drawerVisible = true"> Open Drawer </t-button>
     <t-drawer
       v-model:visible="drawerVisible"
       header="Drawer"
-      :on-confirm="() => drawerVisible = false"
+      :on-confirm="() => (drawerVisible = false)"
       :close-btn="true"
     >
       <p>This is a controlled drawer</p>
     </t-drawer>
-    <br><br>
-    <t-popconfirm
-      theme="default"
-      content="Do you want to delete"
-    >
+    <br /><br />
+    <t-popconfirm theme="default" content="Do you want to delete">
       <t-button>Popconfirm</t-button>
     </t-popconfirm>
-    <br><br>
-    <t-table
-      :data="[]"
-      :columns="columns"
-      row-key="id"
-    />
+    <br /><br />
+    <t-table :data="[]" :columns="columns" row-key="id" />
     <!-- 数组件空数据 -->
     <t-tree :data="[]" />
     <!-- 数组件自定义层级图标 -->
-    <t-tree
-      :data="treeData"
-      transition
-    />
-    <br><br>
+    <t-tree :data="treeData" transition />
+    <br /><br />
     <t-select
       v-model="selectValue1"
       :options="options1"
       placeholder="single select, see close icon, it is configurable"
       clearable
-      style="width: 400px;"
+      style="width: 400px"
     />
-    <br><br>
+    <br /><br />
     <t-select
       v-model="selectValue1"
       :options="options1"
       placeholder="multiple select"
       filterable
       multiple
-      style="width: 400px;"
+      style="width: 400px"
     />
-    <br><br>
+    <br /><br />
     <t-select
       v-model="selectValue2"
       placeholder="multiple remote select"
@@ -97,48 +58,22 @@
       multiple
       filterable
       reserve-keyword
-      style="width: 400px;"
+      style="width: 400px"
     />
-    <br><br>
-    <t-tree-select
-      v-model="treeValue"
-      :data="treeOptions"
-      filterable
-      placeholder="tree select"
-      style="width: 400px;"
-    />
-    <br><br>
-    <t-date-picker
-      placeholder="please select the date"
-      mode="date"
-      style="width: 400px;"
-    />
-    <br><br>
-    <t-time-picker
-      placeholder="please select the time"
-      format="hh:mm:ss a"
-    />
-    <br><br><br>
+    <br /><br />
+    <t-tree-select v-model="treeValue" :data="treeOptions" filterable placeholder="tree select" style="width: 400px" />
+    <br /><br />
+    <t-date-picker placeholder="please select the date" mode="date" style="width: 400px" />
+    <br /><br />
+    <t-time-picker placeholder="please select the time" format="hh:mm:ss a" />
+    <br /><br /><br />
     <t-steps :current="2">
-      <t-step-item
-        title="have completed the steps"
-        content="here is the tip"
-      />
-      <t-step-item
-        title="have completed the steps"
-        content="here is the tip"
-      />
-      <t-step-item
-        title="the wrong step"
-        status="error"
-        content="custom error icon"
-      />
-      <t-step-item
-        title="make the steps"
-        content="here is the tip"
-      />
+      <t-step-item title="have completed the steps" content="here is the tip" />
+      <t-step-item title="have completed the steps" content="here is the tip" />
+      <t-step-item title="the wrong step" status="error" content="custom error icon" />
+      <t-step-item title="make the steps" content="here is the tip" />
     </t-steps>
-    <br><br>
+    <br /><br />
   </t-locale-provider>
 </template>
 
@@ -203,11 +138,11 @@ const GLOBAL_CONFIG = {
   table: {
     empty: 'Table Data is empty.',
     expandIcon: (h) => h && <TIconChevronDown />,
-    sortIcon: (h) => h && <TIconCarretDownSmall size='18px' />,
+    sortIcon: (h) => h && <TIconCarretDownSmall size="18px" />,
   },
   tree: {
     empty: 'Tree Empty Data',
-    folderIcon: (h) => h && <TIconCaretRightSmall size='20px' />,
+    folderIcon: (h) => h && <TIconCaretRightSmall size="20px" />,
   },
   select: {
     empty: 'Empty Data',
@@ -342,9 +277,7 @@ export default {
     remoteFilterMethod(filterWords) {
       this.selectLoading = true;
       const timer = setTimeout(() => {
-        this.options2 = filterWords
-          ? SELECET_OPTIONS.slice(1, 2)
-          : SELECET_OPTIONS.concat();
+        this.options2 = filterWords ? SELECET_OPTIONS.slice(1, 2) : SELECET_OPTIONS.concat();
         this.selectLoading = false;
         clearTimeout(timer);
       }, 100);

@@ -14,10 +14,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   data() {
     return {
-      range: [
-        new Date(2017, 7),
-        new Date(2027, 3),
-      ],
+      range: [new Date(2017, 7), new Date(2027, 3)],
       soltContent: 'hello TDesign',
       controllerConfig: {
         disabled: false, // 是否禁用（全部控件）
