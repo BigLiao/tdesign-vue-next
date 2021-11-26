@@ -80,11 +80,11 @@
 <script lang="jsx">
 import { defineComponent, reactive, ref } from 'vue';
 import { DialogPlugin } from '@tencent/tdesign-vue-next';
-import TIconError from '@tencent/tdesign-vue-next/lib/icon/error';
-import TIconCaretRightSmall from '@tencent/tdesign-vue-next/lib/icon/caret-right-small';
-import TIconCloseCircleFilled from '@tencent/tdesign-vue-next/lib/icon/close-circle-filled';
-import TIconChevronDown from '@tencent/tdesign-vue-next/lib/icon/chevron-down';
-import TIconCarretDownSmall from '@tencent/tdesign-vue-next/lib/icon/caret-down-small';
+import TIconError from '@tencent/tdesign-vue-next/icon/error';
+import TIconCaretRightSmall from '@tencent/tdesign-vue-next/icon/caret-right-small';
+import TIconCloseCircleFilled from '@tencent/tdesign-vue-next/icon/close-circle-filled';
+import TIconChevronDown from '@tencent/tdesign-vue-next/icon/chevron-down';
+import TIconCarretDownSmall from '@tencent/tdesign-vue-next/icon/caret-down-small';
 
 const MONTHS = [
   'January',
