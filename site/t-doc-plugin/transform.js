@@ -2,7 +2,6 @@
 /* eslint-disable no-param-reassign */
 import path from 'path';
 import fs from 'fs';
-import { getContributors } from './utils';
 
 let demoImports = {};
 let demoCodeImports = {};
@@ -88,7 +87,7 @@ export default function transforms() {
               <td-doc-tabs ref="tdDocTabs" :tab="tab"></td-doc-tabs>
               <div v-show="tab === 'demo'" name="DEMO">
                 ${content}
-                <td-contributors platform="web" framework="vue" component-name="${name}"></td-contributors>
+                <td-contributors platform="web" framework="vue-next" component-name="${name}"></td-contributors>
               </div>
               <div v-show="tab === 'api'" name="API">${api}</div>
               <div v-show="tab === 'design'" name="DESIGN">${designResult}</div>
@@ -138,11 +137,9 @@ export default function transforms() {
             },
 
             mounted() {
-              const { tdDocContent, tdDocHeader, tdDocTabs, tdContributors } = this.$refs;
-              
+              const { tdDocTabs, tdDocHeader, tdDocContent } = this.$refs;
               ${isComponent ? 'tdDocTabs.onchange = ({ detail: currentTab }) => this.tab = currentTab;' : ''};
               ${isComponent ? 'tdDocHeader.issueInfo = {};' : ''};
-              ${isComponent ? `tdContributors.contributors = ${JSON.stringify(getContributors(name) || [])};` : ''};
               tdDocHeader.docType = this.docType;
               tdDocHeader.docInfo = {
                 title: \`${title}\`,

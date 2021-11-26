@@ -40,7 +40,7 @@ export default function installMarkdownPlugins(md) {
         const tpl = `
           <td-doc-demo :code="${demoCodeDefName}" demo-name="${demoName}" component-name="${componentName.trim()}">
             <div slot="action">
-              <codesandbox demo-name="${demoName}" component-name="${componentName}" :code=${demoCodeDefName} />
+              <CodeSandbox demo-name="${demoName}" component-name="${componentName}" :code=${demoCodeDefName} />
             </div>
             <div class="tdesign-demo-item__body">
               <${demoDefName} />
