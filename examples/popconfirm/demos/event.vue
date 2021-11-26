@@ -4,16 +4,21 @@
   </t-popconfirm>
 </template>
 <script>
-export default {
-  methods: {
-    confirm(e) {
-      console.log(e);
-      this.$message.info('Click on Yes');
-    },
-    cancel(e) {
-      console.log(e);
-      this.$message.info('Click on No');
-    },
+import { defineComponent } from 'vue';
+import { MessagePlugin } from '@tencent/tdesign-vue-next';
+
+export default defineComponent({
+  setup() {
+    return {
+      confirm(e) {
+        console.log(e);
+        MessagePlugin.info('Click on Yes');
+      },
+      cancel(e) {
+        console.log(e);
+        MessagePlugin.info('Click on No');
+      },
+    };
   },
-};
+});
 </script>
