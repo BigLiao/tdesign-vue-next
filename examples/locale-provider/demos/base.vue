@@ -78,6 +78,8 @@
 </template>
 
 <script lang="jsx">
+import { defineComponent, reactive, ref } from 'vue';
+import { DialogPlugin } from '@tencent/tdesign-vue-next';
 import TIconError from '@tencent/tdesign-vue-next/icon/error';
 import TIconCaretRightSmall from '@tencent/tdesign-vue-next/icon/caret-right-small';
 import TIconCloseCircleFilled from '@tencent/tdesign-vue-next/icon/close-circle-filled';
@@ -233,9 +235,12 @@ const TREE_DATA = [
   { value: '2', label: 'configurable', children: [{ label: '2.1' }, { label: '2.2' }] },
 ];
 
-export default {
-  data() {
-    return {
+export default defineComponent({
+  setup() {
+    const selectLoading = ref(false);
+    const options2 = ref(SELECET_OPTIONS.concat());
+
+    const data = reactive({
       current: 12,
       globalLocale: GLOBAL_CONFIG,
       transferList,
@@ -259,31 +264,33 @@ export default {
       selectValue1: [],
       selectValue2: [],
       options1: SELECET_OPTIONS.concat(),
-      options2: SELECET_OPTIONS.concat(),
-      selectLoading: false,
+
       treeValue: '',
       treeOptions: TREE_OPTIONS,
       treeData: TREE_DATA,
+    });
+    return {
+      ...data,
+      selectLoading,
+      options2,
+      openDialog() {
+        DialogPlugin.confirm({
+          body: 'This is content',
+          cancelBtn: 'cancel',
+          confirmBtn: 'confirm',
+        });
+      },
+      remoteFilterMethod(filterWords) {
+        selectLoading.value = true;
+        const timer = setTimeout(() => {
+          options2.value = filterWords ? SELECET_OPTIONS.slice(1, 2) : SELECET_OPTIONS.concat();
+          selectLoading.value = false;
+          clearTimeout(timer);
+        }, 100);
+      },
     };
   },
-  methods: {
-    openDialog() {
-      this.$dialog.confirm({
-        body: 'This is content',
-        cancelBtn: 'cancel',
-        confirmBtn: 'confirm',
-      });
-    },
-    remoteFilterMethod(filterWords) {
-      this.selectLoading = true;
-      const timer = setTimeout(() => {
-        this.options2 = filterWords ? SELECET_OPTIONS.slice(1, 2) : SELECET_OPTIONS.concat();
-        this.selectLoading = false;
-        clearTimeout(timer);
-      }, 100);
-    },
-  },
-};
+});
 </script>
 <style scoped>
 .tdesign-demo-item--locale-provider-base {
