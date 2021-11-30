@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon base demo works fine 1`] = `
+<div
+  class="t-demo-iconfont"
+>
+  <div
+    class="t-demo-row"
+  >
+    <svg
+      class="t-icon t-icon-loading"
+      style="color: rgb(153, 153, 153);"
+    >
+      <use
+        href="#t-icon-loading"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-close"
+    >
+      <use
+        href="#t-icon-close"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-check-circle-filled"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+  </div>
+  <br />
+  <div
+    class="t-demo-row"
+  >
+    <svg
+      class="t-icon t-icon-check-circle-filled t-size-s"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-check-circle-filled"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-check-circle-filled t-size-m"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-check-circle-filled t-size-l"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-check-circle-filled"
+      style="font-size: 25px;"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-check-circle-filled"
+      style="font-size: 2em;"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+  </div>
+  <br />
+  <div
+    class="t-demo-row"
+  >
+    <svg
+      class="t-icon t-icon-check-circle-filled"
+      style="color: red;"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-check-circle-filled"
+      style="color: green;"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+    <svg
+      class="t-icon t-icon-check-circle-filled"
+      style="color: orange;"
+    >
+      <use
+        href="#t-icon-check-circle-filled"
+      />
+    </svg>
+  </div>
+</div>
+`;
