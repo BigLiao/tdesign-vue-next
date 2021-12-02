@@ -1,5 +1,3 @@
-/* eslint-disable indent */
-/* eslint-disable no-param-reassign */
 import path from 'path';
 import fs from 'fs';
 
