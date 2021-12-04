@@ -1,14 +1,22 @@
 <template>
   <!--
-    该文件由脚本 tdesign/tdesign-web-vue/src/icon/generate/index.js 自动生成。
-    若需要编辑，请编辑源文件：tdesign/tdesign-web-vue/src/icon/generate/demo.tpl 。
+    该文件由脚本 TDesignOteam/tdesign-vue/script/icon-generate/index.js 自动生成。
+    若需要编辑，请编辑源文件：TDesignOteam/tdesign-vue/script/icon-generate/demo.tpl 。
   -->
   <div class="t-demo-iconfont">
-    <p>目前设计师给到的全部图标</p><br>
     <%= icons %>
   </div>
 </template>
 
+<script>
+import { Icon } from 'tdesign-icons-vue-next';
+
+export default {
+  components: {
+    Icon,
+  },
+};
+</script>
 <style lang="less">
   .t-demo-iconfont {
     .t-demo-icon {
@@ -21,7 +29,6 @@
       .t-icon {
         font-size: 25px;
         margin-right: 0;
-        color: #999999;
         transition: all .2s;
       }
       .t-icon:hover {

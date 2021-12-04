@@ -80,11 +80,13 @@
 <script lang="jsx">
 import { defineComponent, reactive, ref } from 'vue';
 import { DialogPlugin } from 'tdesign-vue-next';
-import TIconError from 'tdesign-vue-next/icon/error';
-import TIconCaretRightSmall from 'tdesign-vue-next/icon/caret-right-small';
-import TIconCloseCircleFilled from 'tdesign-vue-next/icon/close-circle-filled';
-import TIconChevronDown from 'tdesign-vue-next/icon/chevron-down';
-import TIconCarretDownSmall from 'tdesign-vue-next/icon/caret-down-small';
+import {
+  ErrorIcon,
+  CaretRightSmallIcon,
+  CloseCircleFilledIcon,
+  ChevronDownIcon,
+  CaretDownSmallIcon,
+} from 'tdesign-icons-vue-next';
 
 const MONTHS = [
   'January',
@@ -139,17 +141,17 @@ const GLOBAL_CONFIG = {
   },
   table: {
     empty: 'Table Data is empty.',
-    expandIcon: (h) => h && <TIconChevronDown />,
-    sortIcon: (h) => h && <TIconCarretDownSmall size="18px" />,
+    expandIcon: (h) => h && <ChevronDownIcon />,
+    sortIcon: (h) => h && <CaretDownSmallIcon size="18px" />,
   },
   tree: {
     empty: 'Tree Empty Data',
-    folderIcon: (h) => h && <TIconCaretRightSmall size="20px" />,
+    folderIcon: (h) => h && <CaretRightSmallIcon size="20px" />,
   },
   select: {
     empty: 'Empty Data',
     loadingText: 'loading...',
-    clearIcon: (h) => h && <TIconCloseCircleFilled />,
+    clearIcon: (h) => h && <CloseCircleFilledIcon />,
   },
   treeSelect: {
     empty: 'Empty Data',
@@ -192,7 +194,7 @@ const GLOBAL_CONFIG = {
     postMeridiem: 'PM',
   },
   steps: {
-    errorIcon: (h) => h && <TIconError />,
+    errorIcon: (h) => h && <ErrorIcon />,
   },
 };
 
