@@ -23,8 +23,9 @@
 import { defineComponent, ref } from 'vue';
 import pgk from './package.json';
 import orgPkg from '../../../package.json';
-
 pgk.dependencies['tdesign-vue-next'] = orgPkg.version;
+pgk.dependencies['tdesign-icons-vue-next'] = orgPkg.dependencies['tdesign-icons-vue-next'];
+
 
 const pgkContent = JSON.stringify(pgk, null, 2);
 import orgJsContent from './main.js.code';
