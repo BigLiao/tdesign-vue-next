@@ -38,7 +38,7 @@ export default function installMarkdownPlugins(md) {
         const demoCodeDefName = `Demo${demoPathOnlyLetters}Code`;
 
         const tpl = `
-          <td-doc-demo :code="${demoCodeDefName}" demo-name="${demoName}" component-name="${componentName.trim()}">
+          <td-doc-demo language="markup" :code="${demoCodeDefName}" demo-name="${demoName}" component-name="${componentName.trim()}">
             <div slot="action">
               <CodeSandbox demo-name="${demoName}" component-name="${componentName}" :code=${demoCodeDefName} />
             </div>
