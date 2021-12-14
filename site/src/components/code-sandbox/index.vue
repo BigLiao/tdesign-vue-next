@@ -1,6 +1,6 @@
 <template>
   <t-tooltip content="在 CodeSandbox 中打开">
-    <t-loading size="small" show-overlay :loading="loading">
+    <t-loading size="small" :loading="loading">
       <div class="action-online" @click="onRunOnline">
         <svg fill="none" height="20" viewBox="0 0 23 23" width="20" xmlns="http://www.w3.org/2000/svg">
           <g clip-rule="evenodd" fill-rule="evenodd">
@@ -22,14 +22,13 @@
 <script>
 import { defineComponent, ref } from 'vue';
 import pgk from './package.json';
-import orgPkg from '../../../package.json';
+import orgPkg from '../../../../package.json';
 pgk.dependencies['tdesign-vue-next'] = orgPkg.version;
 pgk.dependencies['tdesign-icons-vue-next'] = orgPkg.dependencies['tdesign-icons-vue-next'];
 
-
 const pgkContent = JSON.stringify(pgk, null, 2);
-import orgJsContent from './main.js.code';
-import styleContent from './index.css';
+import orgJsContent from './main.js?raw';
+import styleContent from './index.css?raw';
 
 /**
  * 处理 demo 内容，目前是只处理某些外部依赖
@@ -51,10 +50,8 @@ export default defineComponent({
 
     const onRunOnline = () => {
       const { code, componentName, demoName } = props;
-  
-      const mainJsContent = orgJsContent
-        .replace(/componentName/g, componentName)
-        .replace(/demoName/g, demoName);
+
+      const mainJsContent = orgJsContent.replace(/componentName/g, componentName).replace(/demoName/g, demoName);
 
       loading.value = true;
 
@@ -80,17 +77,19 @@ export default defineComponent({
             },
           },
         }),
-      }).then((x) => x.json()).then(({ sandbox_id: sandboxId }) => {
-        loading.value = false;
-        window.open(`https://codesandbox.io/s/${sandboxId}?file=/src/demo.vue`);
-      });
-    }
-    
+      })
+        .then((x) => x.json())
+        .then(({ sandbox_id: sandboxId }) => {
+          loading.value = false;
+          window.open(`https://codesandbox.io/s/${sandboxId}?file=/src/demo.vue`);
+        });
+    };
+
     return {
       loading,
-      onRunOnline
-    }
-  }
+      onRunOnline,
+    };
+  },
 });
 </script>
 
