@@ -158,7 +158,7 @@
     "rollup-plugin-vue": "^6.0.0",
     "tdesign-icons-view": "0.1.0",
     "tdesign-publish-cli": "^0.0.10",
-    "tdesign-site-components": "^0.9.9",
+    "tdesign-site-components": "^0.15.4",
     "typescript": "^4.5.4",
     "vite": "^2.9.5",
     "vite-plugin-pwa": "^0.12.0",
